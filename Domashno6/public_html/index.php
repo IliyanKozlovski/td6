@@ -2,8 +2,6 @@
 
 include '../private_folder/includes/render_functions.php';
 
-$page = '';
-//prowerki
 if (isset($_GET['page'])) {
     switch ($_GET['page']) {
         case 'authors':
@@ -20,5 +18,8 @@ if (isset($_GET['page'])) {
     $page = 'index';
 }
 
-
 include '../private_folder/' . $page . '.php';
+
+$data['header'] = '/../../templates/header_public.php';
+
+render($data, '/../templates/layouts/normal_layout.php');

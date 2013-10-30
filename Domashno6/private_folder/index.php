@@ -31,8 +31,4 @@ while ($row = mysqli_fetch_assoc($q)) {
 }
 
 $data['title'] = 'Списък';
-$data['css'] = '/../../templates/layouts/CSS/style.css';
 $data['content'] = '/../../templates/index_public.php';
-$data['header'] = '/../../templates/header_public.php';
-
-render($data, '/../templates/layouts/normal_layout.php');

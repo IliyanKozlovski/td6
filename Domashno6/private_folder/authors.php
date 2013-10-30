@@ -33,16 +33,8 @@ if ($authors === false) {
 }
 
 $data['title'] = 'Автори';
-$data['css'] = '/../../templates/layouts/CSS/style.css';
-$data['content'] = '/../../templates/authors_public.php';
-$data['header'] = '/../../templates/header_public.php';
 $data['authors'] = $authors;
-
 $data['errors'] = $errors;
 
-
-
-
-//jjjjj
-//render($data, '/../templates/index_public.php');
-render($data, '/../templates/layouts/normal_layout.php');
+$data['css'] = '/../../templates/layouts/CSS/style.css';
+$data['content'] = '/../../templates/authors_public.php';

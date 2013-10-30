@@ -2,7 +2,7 @@
 <html>
     <head>
         <title><?= $data['title']; ?></title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
         <meta charset="UTF-8">       
     </head>
     <body>

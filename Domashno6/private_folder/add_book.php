@@ -53,10 +53,6 @@ if ($authors === false) {
 }
 
 $data['title'] = 'Нова книга';
-$data['css'] = '/../../templates/layouts/CSS/style.css';
-$data['content'] = '/../../templates/add_book_public.php';
-$data['header'] = '/../../templates/header_public.php';
 $data['authors'] = $authors;
 $data['errors'] = $errors;
-
-render($data, '/../templates/layouts/normal_layout.php');
+$data['content'] = '/../../templates/add_book_public.php';
